@@ -1,0 +1,6 @@
+ffmpeg-python
+openai-whisper
+google-genai
+moviepy>=2.0.0.dev2
+colorama
+tqdm
