@@ -9,21 +9,40 @@ A 3-stage intelligence pipeline to automatically Transcribe, Analyze, and Trim v
 
 ## Setup
 
-1. **Install Dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   *Note: You also need FFmpeg installed and in your PATH.*
+### 1. Install FFmpeg (Required)
+The pipeline requires FFmpeg to be installed and accessible in your system PATH.
 
-2. **Configuration:**
-   Create a `config.json` file in the root directory:
-   ```json
-   {
-       "gemini_api_key": "YOUR_GEMINI_API_KEY",
-       "model_size": "small",
-       "enable_audio_cleaning": true
-   }
-   ```
+#### Windows
+1.  Download the **essential build** from [gyan.dev](https://www.gyan.dev/tt/ffmpeg/git-essentials.7z).
+2.  Extract the `.7z` file.
+3.  Copy `ffmpeg.exe`, `ffplay.exe`, and `ffprobe.exe` from the `bin` folder.
+4.  Paste them into the root of this project folder (where `utils.py` is).
+    *   *Alternatively, add the `bin` folder to your System PATH to make it accessible globally.*
+
+#### Mac (via Homebrew)
+```bash
+brew install ffmpeg
+```
+
+#### Linux (Ubuntu/Debian)
+```bash
+sudo apt update && sudo apt install ffmpeg
+```
+
+### 2. Install Python Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configuration
+Create a `config.json` file in the root directory:
+```json
+{
+    "gemini_api_key": "YOUR_GEMINI_API_KEY",
+    "model_size": "small",
+    "enable_audio_cleaning": true
+}
+```
 
 ## Usage
 
