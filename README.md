@@ -170,5 +170,10 @@ This project reflects skills relevant to **AI/ML Engineering, Applied GenAI, and
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License.
+## 👨‍💻 Author
+
+**Aditya Mhatre**
+B.Tech IT Graduate | Aspiring Data Scientist
+📍 Mumbai, India
+
+🔗 [LinkedIn](https://www.linkedin.com/in/adityamhatre19) • [GitHub](https://github.com/Adityx1)
